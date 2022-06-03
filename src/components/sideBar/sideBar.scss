@@ -1,0 +1,70 @@
+$primary-logo-color: #090c9b;
+$primary-icon-color: #3d52d5;
+$primary-border-color: rgb(230, 227, 227);
+
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid $primary-border-color;
+  min-height: 100vh;
+  background-color: white;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary-logo-color;
+    }
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 13px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ece8ff;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: $primary-icon-color;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #888;
+          margin-left: 10px;
+        }
+        .username {
+          font-weight: 700;
+          font-style: bold;
+          font-size: 16px;
+          color: #555;
+        }
+      }
+    }
+  }
+}
