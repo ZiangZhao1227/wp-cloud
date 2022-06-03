@@ -1,6 +1,7 @@
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import { Badge } from "@mui/material";
 
 import "./navBar.scss";
 
@@ -19,8 +20,9 @@ const Navbar = () => {
             English
           </div>
           <div className="item">
-            <ChatBubbleOutlineOutlinedIcon className="icon" />
-            <div className="counter">2</div>
+            <Badge badgeContent={4} color="primary">
+              <ChatBubbleOutlineOutlinedIcon className="icon" />
+            </Badge>
           </div>
         </div>
       </div>
